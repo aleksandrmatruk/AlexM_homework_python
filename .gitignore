@@ -217,3 +217,5 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 /edu/
+/screenshots/
+/lesson_06/secret.py
