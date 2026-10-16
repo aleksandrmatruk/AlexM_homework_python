@@ -11,6 +11,6 @@ def test_navigation():
 
     assert "/forms/post" in driver.current_url
     driver.back()
-    assert "httpbin.qa-territory.online" in driver.current_url
+    assert driver.current_url == "https://httpbin.qa-territory.online/"
 
     driver.quit()
