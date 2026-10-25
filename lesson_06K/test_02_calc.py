@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 def test_calc():
     driver = webdriver.Chrome()
-    wait = WebDriverWait(driver, 45)
+    wait = WebDriverWait(driver, 46)
 
     driver.get(
         "https://bonigarcia.dev/selenium-webdriver-java/slow-calculator.html"
@@ -14,7 +14,7 @@ def test_calc():
 
     delay_input = driver.find_element(By.ID, "delay")
     delay_input.clear()
-    delay_input.send_keys("15")
+    delay_input.send_keys("45")
 
     driver.find_element(By.XPATH, "//span[text()='7']").click()
     driver.find_element(By.XPATH, "//span[text()='+']").click()
