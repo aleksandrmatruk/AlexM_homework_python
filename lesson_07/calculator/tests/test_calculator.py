@@ -15,7 +15,7 @@ def test_calculator():
     calc_page.click_button("8")
     calc_page.click_button("=")
 
-    result = calc_page.get_result()
+    result = calc_page.get_result("15")
 
     assert result == "15", f"Ожидалось 15, получено: {result}"
 

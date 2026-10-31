@@ -12,3 +12,9 @@ class CartPage:
         self.wait.until(EC.element_to_be_clickable(
             (By.ID, "checkout")
         )).click()
+
+    def get_cart_items(self):
+        items = self.wait.until(EC.presence_of_all_elements_located(
+            (By.CLASS_NAME, "inventory_item_name")
+        ))
+        return [item.text for item in items]

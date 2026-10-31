@@ -24,8 +24,8 @@ class CalculatorPage:
             By.XPATH, f"//span[text()='{button_text}']"
         ).click()
 
-    def get_result(self):
+    def get_result(self, expected_text):
         self.wait.until(EC.text_to_be_present_in_element(
-            (By.CSS_SELECTOR, ".screen"), "15"
+            (By.CSS_SELECTOR, ".screen"), expected_text
         ))
         return self.driver.find_element(By.CSS_SELECTOR, ".screen").text
