@@ -9,6 +9,7 @@ __pycache__/
 /screenshots/
 /lesson_06/secret.py
 /edu/
+/.env
 
 # Системные файлы
 .DS_Store
