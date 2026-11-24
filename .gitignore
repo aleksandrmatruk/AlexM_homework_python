@@ -10,6 +10,8 @@ __pycache__/
 /lesson_06/secret.py
 /edu/
 /.env
+lesson_10/**/allure-results/
+lesson_10/**/allure-report/
 
 # Системные файлы
 .DS_Store
