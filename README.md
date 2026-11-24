@@ -9,3 +9,8 @@
 * дз 7 готово
 * дз 8 готово
 * Домашняя работа 9 тесты SQL выполнено
+* Дз 10 тесты с Allure для отчетов
+    Чтобы запустить тесты выполните команду 
+    python -m pytest lesson_10 --alluredir=lesson_10/allure-results
+    Чтобы посмотреть отчет выполните команду:
+    allure serve lesson_10/allure-results
